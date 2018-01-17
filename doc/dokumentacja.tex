@@ -1,0 +1,73 @@
+\documentclass[12pt, oneside, final]{report}
+\usepackage{geometry}
+\geometry{a4paper, left=20mm, right=20mm, top=25mm, bottom=25mm}
+\usepackage[utf8]{inputenc}
+\usepackage{t1enc}
+\usepackage[MeX]{polski}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{indentfirst}
+\usepackage{pdfpages}
+\usepackage{xcolor}
+\usepackage{placeins} % provides \FloatBarrier
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,arrows,calc,decorations.markings,shadows}
+\usepackage[hidelinks]{hyperref}
+
+% Czcionka
+\usepackage{charter}
+
+% Pojedyncze elementy na górze stron
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+
+% Styl tytułowania rozdziałów:
+\usepackage{titlesec}
+%\titleformat{\chapter}{\normalfont\huge}{\bf\thechapter.}{20pt}{\huge\bf}
+% Styl tytułowania rozdziałów:
+\titleformat{\chapter}[display] 
+{\centering\normalfont\huge\bfseries}{\centering\chaptertitlename\ \thechapter.}{0.5em}{}
+\titlespacing{\chapter}{0em}{0em}{2em}
+
+% dodatkowe kropki po numerach rozdziałów, sekcji itd
+\usepackage{titlesec}
+\titlelabel{\thetitle.\quad}
+
+% Dodatkowe odstępy w tabelach
+\usepackage{array}
+\setlength\extrarowheight{4pt}
+
+% Wyłączone wcięcia
+\usepackage{parskip}
+
+\begin{document}
+% Title page
+\begin{titlepage}
+	\centering
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\textwidth]{logo.pdf}
+	\end{figure}
+	\vspace*{100pt}
+	\LARGE{Przetwarzanie cyfrowe obrazów}\\
+	\vspace{30pt}
+	\textsc{\Huge{Rozpoznawanie loga FedEx}}\\
+	\vspace{10pt}
+	\large{Sprawozdanie z projektu}\\
+	\vspace{120pt}
+	\Large{Łukasz Kilaszewski \textit{259822}}\\
+	\vfill
+	\large{23 stycznia 2018}
+\end{titlepage}
+
+\thispagestyle{empty}
+%\tableofcontents
+%\cleardoublepage
+
+\section*{Wstęp}
+Lorem ipsum...
+
+\end{document}
