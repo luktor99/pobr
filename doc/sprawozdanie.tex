@@ -74,7 +74,7 @@
 %\cleardoublepage
 
 \section*{Wstęp}
-Podstawowym celem projektu było napisanie aplikacji, która będzie w stanie rozpoznać fragmenty "Fed" oraz "Ex" z logo firmy FedEx. logo to przedstawione zostało na poniższym rysunku.
+Podstawowym celem projektu było napisanie aplikacji, która będzie w stanie rozpoznać fragmenty "Fed" oraz "Ex" tworzących logo firmy FedEx. Logo to przedstawione zostało na poniższym rysunku.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=0.4\textwidth]{images/logo.jpg}
@@ -90,7 +90,7 @@ Obraz po wczytaniu jest konwertowany do przestrzeni barw HSV. Pozwala to wydziel
 	\centering
 	\begin{tabular}{|l|c|c|}
 		\hline
-		Skłądowa & Wartość min. & Wartość max.\\
+		Składowa & Wartość min. & Wartość max.\\
 		\hline
 		Hue & 0 & 179\\
 		Saturation & 0 & 255\\
@@ -253,7 +253,7 @@ Elementy, których zbiory punktów mają co najmniej 2 pary punktów odległych 
 \section*{Wyniki}
 Poniżej przedstawiono wyniki działania programu dla różnych obrazów wejściowych. Program z zadowalającą skutecznością rozpoznaje logo firmy FedEx na obrazach.
 
-Na rysunku 7. - zgodnie z oczekiwaniami - nie został rozpoznany element "Fed" w białym kolorze.
+Zgodnie z oczekiwaniami, na rysunku 7. nie został rozpoznany element "Fed" w białym kolorze, ponieważ został on odrzucony na etapie segmentacji. Rozpoznanie tego fragmentu wymagałoby zmiany algorytmu segmentacji.
 
 Program nie rozpoznał również jednego z elementów "Ex" na rysunku 8. Prawdopodobnie spowodowane jest to faktem, że element ten jest zniekształcony ze względu na perspektywę.
 \begin{figure}[ht!]
